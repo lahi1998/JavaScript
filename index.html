@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Pictures/Klode-logo.png">
+    <link rel="Stylesheet" href="./CSS/Index.css">
+    <link rel="stylesheet" href="./CSS/stylesheet_head-foot.css">
+    <title>JavaScript</title>
+    <!-- Pitcture changer dragon with buttons -->
+    <script>
+        function setNewImage() {
+            document.getElementById('MouseImg').src = 'Pictures/dragon_fire.png'
+        }
+        function setOldImage() {
+            document.getElementById('MouseImg').src = 'Pictures/dragon.png'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <Header class="page-head">
+            <ul class="left-head">
+                <li class="left-head-list">
+                    <a href="https://lahi1998.github.io/CV-Home/"><img class="photo-mig" src="./Pictures/lars hinge.jpg"
+                            alt="Cv billed, knap til hovedside"></a>
+                </li>
+                <li class="left-head-list">
+                    <h2 class="TNavn">Lars Sadolin Hinge</h2>
+                </li>
+            </ul>
+            <h2 class="T2navn">ELEV DATATEKNIKER MED SPECIALE I PROGRAMMERING</h2>
+
+            <ul class="nav">
+                <li class="nav-list">
+                    <a href="https://lahi1998.github.io/CV-Home/"><img class="logo-knap" src="./Pictures/home.png"
+                            alt="start side knap"></a>
+                </li>
+                <li class="nav-list">
+                    <a href="https://lahi1998.github.io/CV-CV/"><img class="logo-knap" src="./Pictures/CV-logo.png"
+                            alt="Cv logo"></a>
+                </li>
+                <li class="nav-list">
+                    <a href="https://lahi1998.github.io/CV-komp_projekter/"><img class="logo-knap"
+                            src="./Pictures/IT-logo.png" alt="knap til IT"></a>
+                </li>
+            </ul>
+        </Header>
+
+        <main>
+            <!-- Custom modal/popup need it ouside columns, gonna hide it so i wont affect the rest -->
+            <div id="CMPJS" class="CMP-Modal">
+                <div class="CMP-Content">
+                    <div class="Column CMPLeft">
+                        <img class="CMP-Image" src="./Pictures/code_meme.jpg" alt="Codeing meme">
+                    </div>
+                    <div class="Column CMPRight">
+                        <span id="CMP-CloseBtn" class="CMP-CloseBtn">&times;</span>
+                        <p class="CMP-Text">This could be input form to sign up to a newsletter or a login menu with the
+                            Gmail, facebook or signup buttons.</p>
+                        <p class="CMP-Text">But for now just a code meme</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Column Left">
+                <!-- Picture with bottons to change it to breathe fire, and stop breating fire -->
+                <section>
+                    <p class="Text">Simple picture replace using event handler onclick using buttons, in the same lines
+                        in
+                        html.
+                    </p>
+                    <img class="ImgLeft" id="MyImage" src="Pictures/dragon.png" />
+                    <p></p>
+                    <div class="Picture_replace_buttons">
+                        <button class="Picture_replace_button"
+                            onclick="document.getElementById('MyImage').src='Pictures/dragon_fire.png'">Breathe
+                            fire</button>
+                        <button class="Picture_replace_button"
+                            onclick="document.getElementById('MyImage').src='Pictures/dragon.png'">Stop breathing
+                            fire</button>
+                    </div>
+                </section>
+
+                <!-- Standard popups -->
+                <section>
+
+                    <p class="Text">Popups exampels</p>
+                    <!-- buttons for alert-->
+                    <div class="Content_popup">
+                        <div class="Btn_popup_container">
+                            <button class="btn_popup" id="Alert">Alert</button>
+                            <button class="btn_popup" id="Confirm">Confirm box</button>
+                            <button class="btn_popup" id="Prompt">Prompt box</button>
+                        </div>
+                        <div class="ConfirmResponse">
+                            <p>Confirm box response :</p>
+                            <p id="ConfirmReturn"></p>
+                        </div>
+                        <div class="PromptResponse">
+                            <p>Prompt name response : </p>
+                            <p id="Name"></p>
+                        </div>
+                        <!-- heard it bad pratice but works (&nbsp) -->
+                        &nbsp;
+                    </div>
+                    <!-- JavaScript -->
+                    <script src="./JavaScript/Popups.js"></script>
+
+
+                </section>
+
+                <!-- Custom modal/popup -->
+                <section>
+                    <p class="Text">Custom modal/popup</p>
+                    <button id="CMP-Btn" class="CMP-Btn">Try me</button>
+
+                    <!-- JavaScript -->
+                    <script src="./JavaScript/Custom-Popup.js"></script>
+                </section>
+
+            </div>
+
+            <div class="Column Middle">
+                <!-- Picture where you mouseover and mouseout to change it to breathe fire, and stop breating fire -->
+                <section>
+                    <p class="Text">Simple picture replace using event handler mouseover and mouseout with change
+                        happening
+                        depending on function made with script in html.</p>
+                    <img class="ImgMiddle" id="MouseImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
+                        src="./Pictures/dragon.png" />
+                </section>
+
+                <!-- RandomNumber and name generator -->
+                <section>
+                    <!-- random number -->
+                    <p class="Text">Random number generator</p>
+                    <p class="UnderText">generates a number between 10 and 100.</p>
+                    <p class="OutputRandom-text" id="RandomNumber">&nbsp;</p>
+                    <button class="OutputRandom-btn" id="Number">Random number</button>
+
+                    <!-- random name -->
+                    <p class="Text">Random name generator</p>
+                    <p class="UnderText">Generates a random name from 2 arrays.</p>
+                    <p class="UnderText">Both female and male names.</p>
+                    <p class="OutputRandom-text" id="RandomName">&nbsp;</p>
+                    <button class="OutputRandom-btn" id="test">Random name</button>
+
+                    <!-- JavaScript -->
+                    <script src="./JavaScript/Random.js"></script>
+                </section>
+
+            </div>
+
+            <div class="Column Right">
+                <!-- Counter -->
+                <section>
+                    <p class="Text">Simple Counter, made seperate JavaScript for it. il do this from now on.</p>
+                    <div class="Counter-Container">
+                        <h1 class="Counter-text">Counter</h1>
+                        <p class="Value" id="Value">0</p>
+                        <div class="Button-Container">
+                            <button class="Counter_btn" id="btn-Decrease">Decrease</button>
+                            <button class="Counter_btn" id="btn-Reset">Reset</button>
+                            <button class="Counter_btn" id="btn-Increase">Increase</button>
+                        </div>
+                    </div>
+                    <!-- JavaScript -->
+                    <script src="./JavaScript/Counter.js"></script>
+                </section>
+
+                <!-- Calculator -->
+                <section>
+                    <p class="Text">Calculator </p>
+                    <div class="Calculator-container">
+                        <div class="Output">
+                            <p id="Screen" class="Screen"></p>
+                        </div>
+                        <div class="Grid-container">
+                            <button id="All-clear" class="Grid Span-one">AC</button>
+                            <button id="Delete" class="Grid item">DEL</button>
+                            <button Id="Operation÷" class="Grid item">÷</button>
+                            <button id="Number1" class="Grid item">1</button>
+                            <button id="Number2" class="Grid item">2</button>
+                            <button id="Number3" class="Grid item">3</button>
+                            <button Id="Operation*" class="Grid item">*</button>
+                            <button id="Number4" class="Grid item">4</button>
+                            <button id="Number5" class="Grid item">5</button>
+                            <button id="Number6" class="Grid item">6</button>
+                            <button Id="Operation+" class="Grid item">+</button>
+                            <button id="Number7" class="Grid item">7</button>
+                            <button id="Number8" class="Grid item">8</button>
+                            <button id="Number9" class="Grid item">9</button>
+                            <button Id="Operation-" class="Grid item">-</button>
+                            <button id="Number." class="Grid item">.</button>
+                            <button id="Number0" class="Grid item">0</button>
+                            <button Id="Equals" class="Grid Span-two">=</button>
+                        </div>
+                    </div>
+                    <!-- JavaScript -->
+                    <script src="./JavaScript/Calulator.js"></script>
+                </section>
+
+            </div>
+
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>

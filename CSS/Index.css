@@ -1,0 +1,303 @@
+.Column {
+    float: left;
+}
+
+.Left {
+    width: 33%;
+    height: auto;
+}
+
+.Middle {
+    width: 33%;
+    height: auto;
+}
+
+
+.Right {
+    width: 33%;
+    height: auto;
+}
+
+/*/ Universal css /*/
+
+.Text {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+
+}
+
+/*/ Left /*/
+
+/*/ picture replacer with buttons /*/
+
+.Picture_replace_button {
+    margin-left: 10%;
+    padding-left: 1px;
+    padding-right: 1px;
+    cursor: pointer;
+}
+
+.Picture_replace_buttons
+{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.ImgLeft {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+    width: 80%;
+}
+
+/*/ Popups /*/
+
+.Content_popup {
+    margin-left: 5%;
+    background-color: lightblue;
+}
+
+.ConfirmResponse {
+    display: grid;
+    grid-template-columns: repeat(2, 34% 66%);
+    margin-bottom: 1vh;
+    margin-left: 2%;
+
+}
+
+.PromptResponse {
+    display: grid;
+    grid-template-columns: repeat(2, 35% 65%);
+    margin-left: 2%;
+}
+
+.Btn_popup_container {
+    text-align: center;
+    margin-left: 5%;
+}
+
+.btn_popup {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    cursor: pointer;
+}
+
+/*/ Custom Popup /*/
+
+.CMPLeft{
+    width: 60%;
+    height: auto;
+}
+
+.CMPRight{
+    width: 40%;
+    height: auto;
+}
+
+.CMP-Btn {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    cursor: pointer;
+    color: white;
+    background-color: orange;
+    border: solid orange 5px;
+    border-radius: 10px;
+}
+
+.CMP-Btn:hover{
+    background-color: orangered;
+    border: solid orangered 5px;
+}
+
+.CMP-Modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.CMP-Content{
+    background-color: lightgrey;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    height: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.CMP-CloseBtn{
+    color: lightslategray;
+    float: right;
+    font-size: 30px;
+}
+
+.CMP-CloseBtn:hover{
+    color: black;
+    cursor: pointer;
+    
+}
+
+.CMP-Image{
+    width: 100%;
+    height: auto;
+}
+
+.CMP-Text{
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+/*/ Middle /*/
+
+/*/ picture replacer mouseover /*/
+
+.ImgMiddle {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+    width: 77%;
+}
+
+/*/ Random generators /*/
+
+.OutputRandom-btn {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border: solid 2px lightgray;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+    cursor: pointer; 
+}
+
+.OutputRandom-btn:hover{
+    background-color: lightcyan;
+}
+
+.OutputRandom-text {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border: solid 2px lightgray;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+}
+
+.UnderText {
+    text-align: center;
+}
+
+/*/ Right /*/
+
+/*/ Counter /*/
+
+.Counter-Container {
+    margin-top: 3vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: cornflowerblue;
+    width: 80%;
+    height: auto;
+    border: solid 15px cornflowerblue;
+    border-radius: 10px;
+}
+
+.Button-Container {
+    text-align: center;
+}
+
+.Counter_btn {
+    margin-top: 1vh;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: green;
+    border: solid 4px green;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Counter-text {
+    text-align: center;
+    color: white;
+}
+
+.Value {
+    margin-top: 1vh;
+    text-align: center;
+    color: white;
+    font-size: 140%;
+}
+
+/*/ Calculator /*/
+
+.Calculator-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2vh;
+    height: auto;
+    width: 60%;
+    background-color: aliceblue;
+    border: solid 3px black;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-auto-rows: auto;
+    height: 250px;
+    width: auto;
+
+
+
+}
+
+.Span-one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.Span-two {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.Grid {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightskyblue;
+    border-color: aliceblue;
+    cursor: pointer;
+}
+
+.Grid:hover {
+    background-color: turquoise;
+}
+
+.Screen {
+    margin-top: 3%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    text-align: right;
+    height: 20px;
+
+
+}
