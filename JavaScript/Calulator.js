@@ -86,7 +86,7 @@ function Num9() {
     document.querySelector("#Screen").innerHTML = screenoutput
 }
 function Divide() {
-    screenoutput = screenoutput + "÷"
+    screenoutput = screenoutput + "/"
     document.querySelector("#Screen").innerHTML = screenoutput
 }
 function Times() {
